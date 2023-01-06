@@ -5,6 +5,10 @@
  *
  * Made By MaterializeCSS.com
  */
+ 
+ h1 {
+   color: rgba(255,255,255, 1);
+ }
 
 nav ul a,
 nav .brand-logo {
