@@ -5,10 +5,10 @@
  *
  * Made By MaterializeCSS.com
  */
- 
- h1 {
-   color: rgba(255,255,255, 1);
- }
+
+h1 {
+  color: rgba(255, 255, 255, 1);
+}
 
 nav ul a,
 nav .brand-logo {
@@ -24,20 +24,22 @@ p {
 }
 
 .parallax-container {
-  min-height: 380px;
-  line-height: 0;
+  min-height: 500px;
+  line-height: 1;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, .9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+
+.parallax-container .section {
+  width: 100%;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
   }
+
   #index-banner .section {
     top: 10%;
   }
@@ -52,6 +54,7 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
