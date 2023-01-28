@@ -1,152 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Parallax Template - Materialize</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <title>Starter Template - Materialize</title>
+
+
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-</head>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<style>
+.mySlides {display:none;}
+
+body {
+	background: transparent;
+}
+</style>
+</head>
 <body>
-  <nav class="white" role="navigation">
+  <nav class="light-orange lighten-1" role="navigation" style="background-color: white;">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+<a id="logo-container" href="#" class="center brand-logo"><img class="img" src="img/logo.png" style="width:35%; margin: 4%;"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
       </ul>
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
+
+      <ul id="nav-mobile" class="center sidenav">
+  <img class="center img" src="img/logo.png" style="width:80%">
+        <li class="left"><a href="#">Navbar Link</a></li>
       </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons orange-text">menu</i></a>
     </div>
+
   </nav>
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center white-text text-lighten-2">Pens & Pencils</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">We don't just give you something to write with, no, it's more than that. We give you an extension of youself to imagine, create and grow with.</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light black lighten-3">Get Started</a>
-        </div>
-        <br><br>
+
+
+     
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="img/pic5.jpg" style="width:100%">
+  <img class="mySlides" src="img/pic2.jpg" style="width:100%">
+  <img class="mySlides" src="img/pic3.jpg" style="width:100%">
+  <img class="mySlides" src="img/pic4.jpg" style="width:100%">
+
+  <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+  <div class="section no-pad-bot" id="index-banner">
+
+    <div class="container center">
+
+      <div class="row">
+        <div class="col s6 m6 l6" style="margin: 0%; padding: 0%;">
+		<img class="right img" src="img/logo.png" style="width:100%; margin: 0%; padding: 0%;">
+	</div>
+	
+       <div class="col s6 m6 l6" style="margin: auto; padding: 0%;">
+<br /><br />
+		<h1 class="orange-text" style="margin: auto%;"><span class="left">ffortless<br />
+urnishings</span></h1>
+	</div>
+	</div>
+
+
+      <div class="row center">
+
+        <h5 class="header col s12 light">A modern furniture company spawned from the past</h5>
       </div>
+      <div class="row center">
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+      </div>
+      <br><br>
+
     </div>
-    <div class="parallax"><img src="img/background1.jpg" alt="Pexels background img1"></div>
   </div>
+
+
   <div class="container">
     <div class="section">
+
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center black-text"><i class="material-icons">create</i></h2>
-            <h5 class="center">Speeds up development</h5>
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          <div class="hoverable icon-block">
+            <h2 class="h21 center orange-text darken-2"><i class="material-icons" style="text-shadow: 2px 2px 4px grey;">flash_on</i></h2>
+            <h5 class="center">Our Company</h5>
+
+            <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
           </div>
         </div>
+
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center black-text"><i class="material-icons">call_to_action</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          <div class="hoverable icon-block">
+            <h2 class="h22 center orange-text"><i class="material-icons" style="text-shadow: 2px 2px 4px grey;">group</i></h2>
+            <h5 class="center">Our Goal</h5>
+
+            <p class="light center">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
           </div>
         </div>
+
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center black-text"><i class="material-icons">fingerprint</i></h2>
-            <h5 class="center">Easy to work with</h5>
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          <div class="hoverable icon-block">
+            <h2 class="h23 center orange-text"><i class="material-icons" style="text-shadow: 2px 2px 4px grey;">settings</i></h2>
+            <h5 class="center">Our Commitment</h5>
+
+            <p class="light center">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
           </div>
         </div>
       </div>
+
     </div>
-  </div>
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">We make instruments for writing because we believe that everyone should "write their own music" with the best "instrument." </h5>
+    <br><br>
+
+  <div class="row">
+    <div class="col s12 m4 l4">
+      <div class="card waves-effect waves-light hoverable">
+        <div class="card-image">
+          <img src="img/pic5.jpg">
+          <span class="card-title">Products</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light pulse brown lighten-1"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="img/background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-  <div class="container">
-    <div class="section">
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <h5>Address</h5>
-          <p class="center-align light">La Ressource,<br />Vieuc-Fort,<br />
-            St. Lucia.
-          </p>
-          <h5>E-mail</h5>
-          <p class="center-align light">pens&pencils@penmail.com</p>
-          <h5>Phone</h5>
-          <p class="center-align light">1-888-Pen Cild</p>
+
+ <div class="col s12 m4 l4">
+      <div class="card waves-effect waves-light hoverable">
+        <div class="card-image">
+          <img src="img/pic6.jpg">
+          <span class="card-title">Gallery</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light pulse brown lighten-1"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">So, come, please, write with us. Play your own song. Become. Your personalized writing companion is waiting for you.</h5>
+
+ <div class="col s12 m4 l4">
+      <div class="card waves-effect waves-light hoverable">
+        <div class="card-image">
+          <img src="img/pic7.jpg">
+          <span class="card-title">Social Media</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light pulse brown lighten-1"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="img/background3.jpg" alt="Unsplashed background img 3"></div>
+  </div><!--row-->
+
+
   </div>
-  <footer class="page-footer black">
+
+  <footer class="page-footer orange">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">Founded in 1754 by Jamo Pompelo , Pens & Pencils Co. Ltd. was birthed from a young entrepeneur's dream to see others enjoy the process of writing as much as he did. "It's all magic, i think" was one of Pompelo's favourite lines as he spent most of his spare time writing poems, short essays and newspaper articles. And now almost two centuries later, he is still alive today making these fine hand-crafted writing instruments. </p>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Decorative Credits</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li>Photo by: <a class="white-text" href="https://www.pexels.com/photo/photo-of-a-kitchen-4030060/">Curtis Adams on Pexels</a></li>
+            <li>Photo by: <a class="white-text" href="https://www.pexels.com/photo/close-up-of-leaf-on-wooden-plank-325703/">Victor Santos on Pexels</a></li>
+            <li>Photo by:<a class="white-text" href="https://unsplash.com/photos/rwa0Yh38FeA?utm_source=unsplash&utm_medium=referral&utm_content=corange lighten3itShareLink">Pickawood</a> on Unsplash</li>
+
+            <li>Photo by:<a class="white-text" href="https://unsplash.com/photos/pyo3gzTa-qM?utm_source=unsplash&utm_medium=referral&utm_content=corange lighten3itShareLink">amira aldia amal</a> on Unsplash</li>
+    <li>Photo by: <a class="white-text" href="https://www.pexels.com/photo/brown-wooden-surface-129733/">FWStudio</a> on Unsplash</li>
             <li><a class="white-text" href="#!">Link 2</a></li>
             <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+     <div class="text-center" style="margin: 10% auto;">
+
+  <span class="#"><a href="#"><i class="fa fa-facebook-square" style="font-size:24px;color:red;text-shadow:2px 2px 4px #000;"></i></a></span>
+
+  <span class="#"><a href="#"><i class="fa fa-github-square" style="font-size:24px;color:white"></i></a></span>
+
+  <span class="#"><a href="#"><i class="fa fa-youtube-square" style="font-size:24px;color:white"></i></a></span>
+
+  <span class="#"><a href="#"><i class="fa fa-linkedin-square" style="font-size:24px;color:white"></i></a></span>
+
+  <span class="#"><a href="#"><i class="fa fa-twitter-square" style="font-size:24px;color:white"></i></a></span>
+
+  <span class="#"><a href="#"><i class="fa fa-pinterest-square" style="font-size:24px;color:white"></i></a></span>
+
+  <span class="#"><a href="#"><i class="fa fa-whatsapp" style="font-size:24px;color:white"></i></a></span>
+
+</div>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-        Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a><br />
-        Photo by: <a href="https://www.pexels.com/photo/classic-close-up-draw-expensive-372748/">Pixaby</a><br />
-        Photo by: <a href="https://www.pexels.com/photo/black-and-white-photo-of-pencils-117018/">George Becker</a><br />
-        Photo by: <a href="https://www.pexels.com/photo/black-text-on-gray-background-261763/">Pexels</a><br />
-        Photo by <a href="https://unsplash.com/photos/JDPDMaINjko?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Kelly Sikkema</a> on Unsplash
+      Made by <a class="orange-text text-lighten-1" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
+
+
   <!--  Scripts-->
+
+  <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+  </script>
+
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-</body>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script>
 
+let h21 = document.querySelector(".h21");
+
+let h22 = document.querySelector(".h22");
+
+let h23 = document.querySelector(".h23");
+
+function one() {
+	h21.animate([
+	{
+	transform: 'skew(0deg, 0deg)'
+	},
+	{
+	transform: 'skew(110deg, 350deg)'
+	}],
+	{
+	duration: 200
+	});
+	
+	setTimeout(two, 300);
+}
+
+function two() {
+	h22.animate([
+	{
+	transform: 'skew(0deg, 0deg)'
+	},
+	{
+	transform: 'skew(110deg, 350deg)'
+	}],
+	{
+	duration: 200
+	});
+	
+	setTimeout(three, 300);
+}
+
+function three() {
+	h23.animate([
+	{
+	transform: 'skew(0deg, 0deg)'
+	},
+	{
+	transform: 'skew(110deg, 350deg)'
+	}],
+	{
+	duration: 200
+	});
+}
+
+setInterval(one, 5000);
+</script>
+  </body>
 </html>
